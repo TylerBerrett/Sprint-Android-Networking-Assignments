@@ -13,14 +13,14 @@
         tools:listitem="@layout/display_countries"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/fetchCountries"
+        app:layout_constraintBottom_toTopOf="@+id/fetchCountriesButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 
     <Button
-        android:id="@+id/fetchCountries"
+        android:id="@+id/fetchCountriesButton"
         android:text="display countries"
         android:layout_margin="16dp"
         android:textColor="@android:color/white"

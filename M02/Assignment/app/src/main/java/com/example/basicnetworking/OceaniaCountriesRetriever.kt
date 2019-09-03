@@ -8,13 +8,13 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class OceaniaCountriesRetriever {
 
-    fun getOceaniaCountries(): Call<OceaniaCountry> {
+    fun getOceaniaCountries(): Call<List<OceaniaCountry>> {
         val gson = GsonBuilder()
             .setLenient()
             .create()
 
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://restcountries.eu/rest/v2/region/oceania")
+            .baseUrl("https://restcountries.eu")
             .addConverterFactory(GsonConverterFactory.create(gson))
             .build()
 

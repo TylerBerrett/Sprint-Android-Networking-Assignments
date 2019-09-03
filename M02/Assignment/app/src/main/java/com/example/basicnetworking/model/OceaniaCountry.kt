@@ -1,6 +1,5 @@
 package com.example.basicnetworking.model
 
-class OceaniaCountry (
+data class OceaniaCountry (
     val name: String,
-    val population : String
-)
+    val population : String)
