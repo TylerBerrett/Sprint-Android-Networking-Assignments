@@ -12,17 +12,17 @@ class MainActivity : AppCompatActivity() {
 
 
     inner class MyAsyncTask : AsyncTask<Unit, Int, String>(){
+        //Need
         override fun doInBackground(vararg p0: Unit?): String {
             val primeNumbers = primes().take(16000).joinToString(", ")
             return primeNumbers
         }
-
         override fun onPreExecute() {
             super.onPreExecute()
             prime_number_text.visibility = TextView.GONE
             toggleProgressBar()
         }
-
+        //need
         override fun onPostExecute(result: String?) {
             super.onPostExecute(result)
             toggleProgressBar()
