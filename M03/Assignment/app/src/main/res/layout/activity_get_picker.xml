@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/buttonGet"
+        android:id="@+id/buttonSimpleGet"
         android:text="Simple Get"
         android:padding="8dp"
         android:textColor="@android:color/white"
@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"/>
 
     <Button
-        android:id="@+id/buttonPost"
+        android:id="@+id/buttonPath"
         android:text="Get Call w/ Path"
         android:padding="8dp"
         android:textColor="@android:color/white"
@@ -31,7 +31,7 @@
         android:layout_height="wrap_content"/>
 
     <Button
-        android:id="@+id/buttonPut"
+        android:id="@+id/buttonQuery"
         android:text="Get Call w/ Query"
         android:padding="8dp"
         android:textColor="@android:color/white"
