@@ -11,13 +11,14 @@ class MyService : Service() {
 
     companion object {
         val DOWNLOAD_IMAGE_KEY = "key"
+        val DOWNLOAD_ACTION = "action"
     }
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         Thread(Runnable {
-            val bitmap = NetworkAdapter.getBitmapFromUrl("https://i.imgur.com/HaSmgGn.jpg", 100, 100)
+            val bitmap = NetworkAdapter.getBitmapFromUrl("https://i.imgur.com/HaSmgGn.jpg", 420, 420)
 
-            val intent = Intent("test").apply {
+            val intent = Intent(DOWNLOAD_ACTION).apply {
                 putExtra(DOWNLOAD_IMAGE_KEY, bitmap)
             }
             LocalBroadcastManager.getInstance(this).sendBroadcast(intent)

@@ -7,12 +7,21 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
     <ImageView
         android:id="@+id/main_image"
         android:adjustViewBounds="true"
         android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+
+
 
     <Button
         android:id="@+id/button_get_image"
